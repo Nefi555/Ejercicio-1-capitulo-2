@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repartición de Camellos</title>
+    <link rel="stylesheet" href="estilos css\estilos.css">
+</head>
+<body>
+    <h1>La Repartición de los Camellos</h1>
+
+    <h2>Historia del Problema</h2>
+    <p>El "Hombre que Calculaba", Beremiz Samir, es conocido por su ingeniosa solución a un problema de herencia entre tres hermanos que debían dividir 35 camellos según la voluntad de su padre. Beremiz añadió su propio camello a la suma, haciendo un total de 36 camellos, lo cual permitió dividirlos de manera equitativa:</p>
+    <ul>
+        <li>El hermano mayor recibiría la mitad: 18 camellos.</li>
+        <li>El segundo hermano recibiría un tercio: 12 camellos.</li>
+        <li>El hermano menor recibiría una novena parte: 4 camellos.</li>
+    </ul>
+    <p>Después de realizar la partición, Beremiz recuperó su propio camello, resultando en una solución justa y elegante para todos.</p>
+
+    <h2>Análisis del Problema</h2>
+    <p>El truco ingenioso de Beremiz fue añadir un camello adicional, lo que permitió realizar las divisiones exactas según las fracciones deseadas. Este método puede aplicarse a cualquier número de camellos y personas, siempre que se añada un camello para facilitar la división. A continuación se presenta un formulario interactivo para experimentar con este método.</p>
+
+    <form id="camelloForm">
+        <label for="numCamellos">Número de camellos:</label>
+        <input type="number" id="numCamellos" name="numCamellos" required>
+
+        <label for="fracciones">Ingrese las fracciones (separadas por comas, ej: 1/2, 1/3, 1/6):</label>
+        <input type="text" id="fracciones" name="fracciones" required>
+
+        <input type="button" value="Calcular" onclick="calcularReparticion()">
+    </form>
+
+    <h2>Resultados</h2>
+    <div id="resultados"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
